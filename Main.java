@@ -7,7 +7,7 @@ public class Main {
         BigInteger first = new BigInteger("0");     // первое число в последовательности
         BigInteger second = new BigInteger("1");    // второе число в последовательности
         BigInteger third;                               // хранит значение суммы двух предыдущих чисел
-        BigInteger sumFib = new BigInteger("0");    // хранит значение суммы четных чисел до [index]
+        BigInteger sumFib = new BigInteger("0");    // хранит значение суммы четных чисел до "index"
         if (index >= 0) {
             for (int i = 2; i <= index; i++) {
                 third = first.add(second);
