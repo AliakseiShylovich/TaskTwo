@@ -8,28 +8,28 @@ public class Main {
         BigInteger second = new BigInteger("1");    // второе число в последовательности
         BigInteger third;                               // хранит значение суммы двух предыдущих чисел
         BigInteger sumFib = new BigInteger("0");    // хранит значение суммы четных чисел до [index]
-            if (index >= 0) {
-                for (int i = 2; i <= index; i++) {
-                    third = first.add(second);
-                    first = second;
-                    second = third;
-                    if (i == evennumber) {
-                        evennumber = evennumber + 3;
-                        sumFib = third.add(sumFib);
+        if (index >= 0) {
+            for (int i = 2; i <= index; i++) {
+                third = first.add(second);
+                first = second;
+                second = third;
+                if (i == evennumber) {
+                    evennumber = evennumber + 3;
+                    sumFib = third.add(sumFib);
                 }
             }
-                System.out.println(sumFib);
-            } else {
-                for (int i = 2; i <= Math.abs(index); i++) {
-                    third = first.subtract(second);
-                    first = second;
-                    second = third;
-                    if (i == evennumber) {
-                        evennumber = evennumber + 3;
-                        sumFib = third.add(sumFib);
-                    }
+            System.out.println(sumFib);
+        } else {
+            for (int i = 2; i <= Math.abs(index); i++) {
+                third = first.subtract(second);
+                first = second;
+                second = third;
+                if (i == evennumber) {
+                    evennumber = evennumber + 3;
+                    sumFib = third.add(sumFib);
                 }
-                System.out.println(sumFib);
             }
+            System.out.println(sumFib);
+        }
     }
 }
