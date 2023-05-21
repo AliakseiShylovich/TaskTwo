@@ -2,7 +2,7 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        int index = -112;     // хранит индекс числа до которого производится суммирование
+        int index = -157;     // хранит индекс числа до которого производится суммирование
         int evennumber = 3;   // хранит индекс четного числа
         BigInteger first = new BigInteger("0");     // первое число в последовательности
         BigInteger second = new BigInteger("1");    // второе число в последовательности
